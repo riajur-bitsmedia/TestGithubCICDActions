@@ -21,6 +21,26 @@ final class TestGithubCICDTests: XCTestCase {
     func testExample() throws {
         XCTAssertEqual(2*2, 4)
     }
+    
+    func testExample1() throws {
+        XCTAssertEqual(2*2, 4)
+    }
+    
+    func testExample2() throws {
+        XCTAssertEqual(2*2, 4)
+    }
+    
+    func testExample3() throws {
+        XCTAssertEqual(2*2, 4)
+    }
+    
+    func testExample4() throws {
+        XCTAssertEqual(2*2, 4)
+    }
+    
+    func testExample5() throws {
+        XCTAssertEqual(2*2, 4)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
