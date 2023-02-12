@@ -15,7 +15,7 @@ public class TestLint {
         return firstValue + secondValue
     }
 
-    public func sub() -> Int {
-        return secondValue - firstValue
+      public func sub() -> Int {
+            return secondValue - firstValue
     }
 }
