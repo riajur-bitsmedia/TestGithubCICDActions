@@ -30,6 +30,15 @@ jobs:
       - name: Install gems
         run: bundle install
 
+      - name: Cocoapods Cache
+        uses: actions/cache@v3.2.5
+        id: cocoapods-cache
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+
       - name: Swift Packages Cache
         uses: actions/cache@v3.2.5
         id: cache
@@ -39,6 +48,11 @@ jobs:
             Build/Build/Products
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
+
+      - name: CocoaPods
+        if: steps.cocoapods-cache.outputs.cache-hit != 'true'
+        run: |
+          pod install
 
       - name: Run Tests (No Cache)
         if: steps.setup.outputs.cache-hit != 'true'
