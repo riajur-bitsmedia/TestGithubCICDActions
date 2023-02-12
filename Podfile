@@ -6,4 +6,5 @@ target 'TestGithubCICD' do
   use_frameworks!
 
   pod 'Kingfisher', '~> 7.0'
+  pod 'SwiftLint'
 end
