@@ -21,11 +21,11 @@ final class TestGithubCICDTests: XCTestCase {
     func testExample1() throws {
         XCTAssertEqual(2*2, 4)
     }
-    
+
     func testExample2() throws {
         XCTAssertEqual(2*2, 4)
     }
-    
+
     func testExample3() throws {
         XCTAssertEqual(2*2, 4)
     }

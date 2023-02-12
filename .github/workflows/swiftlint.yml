@@ -1,0 +1,6 @@
+disabled_rules:
+  - line_length
+excluded:
+  - Pods
+  - SwiftLint/Common/3rdPartyLib
+reporter: "xcode"
