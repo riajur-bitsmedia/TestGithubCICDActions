@@ -1,2 +1,3 @@
 workspace "TestGithubCICD.xcworkspace"
+scheme "TestModule"
 device "iPhone 14"
