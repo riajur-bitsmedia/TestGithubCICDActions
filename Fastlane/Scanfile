@@ -1,2 +1,2 @@
-project "TestGithubCICD.xcodeproj"
-scheme "TestGithubCICD"
+workspace "TestGithubCICD.xcworkspace"
+device "iPhone 14"
