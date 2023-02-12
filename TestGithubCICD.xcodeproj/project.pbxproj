@@ -15,6 +15,8 @@
 		F7856B49299809BE002AFE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7856B48299809BE002AFE38 /* Assets.xcassets */; };
 		F7856B4C299809BE002AFE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7856B4A299809BE002AFE38 /* LaunchScreen.storyboard */; };
 		F7856B57299809BF002AFE38 /* TestGithubCICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7856B56299809BF002AFE38 /* TestGithubCICDTests.swift */; };
+		F7E4BCA12998C1520058E636 /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E4BCA02998C1520058E636 /* TestModule.framework */; };
+		F7E4BCA22998C1520058E636 /* TestModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7E4BCA02998C1520058E636 /* TestModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,20 @@
 			remoteInfo = TestGithubCICD;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7E4BCA32998C1520058E636 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7E4BCA22998C1520058E636 /* TestModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A4FE018E5AC1B7256381FD7 /* Pods_TestGithubCICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGithubCICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +57,7 @@
 		F7856B4D299809BE002AFE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7856B52299809BF002AFE38 /* TestGithubCICDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGithubCICDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7856B56299809BF002AFE38 /* TestGithubCICDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGithubCICDTests.swift; sourceTree = "<group>"; };
+		F7E4BCA02998C1520058E636 /* TestModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E4BCA12998C1520058E636 /* TestModule.framework in Frameworks */,
 				1D1A42CA9A3D6B6D29C6EB17 /* Pods_TestGithubCICD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +83,7 @@
 		250B47FDE35CFFEF2369AA73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7E4BCA02998C1520058E636 /* TestModule.framework */,
 				0A4FE018E5AC1B7256381FD7 /* Pods_TestGithubCICD.framework */,
 			);
 			name = Frameworks;
@@ -76,7 +95,6 @@
 				B6294AEAB5F533765C67A7A9 /* Pods-TestGithubCICD.debug.xcconfig */,
 				8DEB97D8E1D2D54E9D2F5648 /* Pods-TestGithubCICD.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +152,7 @@
 				F7856B39299809BD002AFE38 /* Frameworks */,
 				F7856B3A299809BD002AFE38 /* Resources */,
 				5EBAD13E9DD46F21D17334D9 /* [CP] Embed Pods Frameworks */,
+				F7E4BCA32998C1520058E636 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
