@@ -3,6 +3,7 @@ name: "Build and Test"
 on: 
   pull_request:
     paths:
+      - '.github/workflows/swiftlint.yml'
       - '.swiftlint.yml'
       - '**/*.swift'
 
