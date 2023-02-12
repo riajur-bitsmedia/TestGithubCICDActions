@@ -15,8 +15,6 @@ jobs:
         uses: norio-nomura/action-swiftlint@3.2.1
         with:
           args: --strict
-        line_length: 
-          ignores_comments: true
 
   build_test:
     name: Run tests
