@@ -10,6 +10,7 @@
 		F7E4BC912998C0A50058E636 /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E4BC882998C0A50058E636 /* TestModule.framework */; };
 		F7E4BC962998C0A50058E636 /* TestModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E4BC952998C0A50058E636 /* TestModuleTests.swift */; };
 		F7E4BC972998C0A50058E636 /* TestModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E4BC8B2998C0A50058E636 /* TestModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7E4BCA52998DC2D0058E636 /* TestLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E4BCA42998DC2D0058E636 /* TestLint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		F7E4BC8B2998C0A50058E636 /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		F7E4BC902998C0A50058E636 /* TestModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E4BC952998C0A50058E636 /* TestModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleTests.swift; sourceTree = "<group>"; };
+		F7E4BCA42998DC2D0058E636 /* TestLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F7E4BC8B2998C0A50058E636 /* TestModule.h */,
+				F7E4BCA42998DC2D0058E636 /* TestLint.swift */,
 			);
 			path = TestModule;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					F7E4BC872998C0A50058E636 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					F7E4BC8F2998C0A50058E636 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E4BCA52998DC2D0058E636 /* TestLint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +341,7 @@
 		F7E4BC9B2998C0A50058E636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		F7E4BC9C2998C0A50058E636 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -392,6 +400,7 @@
 		F7E4BC9E2998C0A50058E636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H43DZAU5DJ;
@@ -408,6 +417,7 @@
 		F7E4BC9F2998C0A50058E636 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H43DZAU5DJ;
